@@ -68,6 +68,8 @@ GEM
     erubis (2.7.0)
     execjs (2.9.1)
     ffi (1.17.0)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.6)
@@ -199,6 +201,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
