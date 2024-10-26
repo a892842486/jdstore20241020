@@ -59,5 +59,14 @@
         </tr>
       </tbody>
     </table>
+    <% if !@order.is_paid? %>
+      <div class="group pull-right">
+        <%= link_to("以信用卡支付", pay_with_creditcard_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
+        <%= link_to("以電子錢包支付", pay_with_ewallet_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
+      </div>
+    <% else %>
+      <p class="text-center">此訂單已完成付款</p>
+    <% end %>
+
   </div>
 </div>
